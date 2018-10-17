@@ -15,6 +15,8 @@
 		197308E921774BE900B95FF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 197308E821774BE900B95FF0 /* main.m */; };
 		197308F321774BE900B95FF0 /* GDNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 197308F221774BE900B95FF0 /* GDNoteTests.m */; };
 		197308FE21774BE900B95FF0 /* GDNoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 197308FD21774BE900B95FF0 /* GDNoteUITests.m */; };
+		1973090F21774D4900B95FF0 /* GDNSString+Number+GD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1973090E21774D4900B95FF0 /* GDNSString+Number+GD.m */; };
+		1973091121774E0100B95FF0 /* GDTestStringNumCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1973091021774E0100B95FF0 /* GDTestStringNumCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		197308F921774BE900B95FF0 /* GDNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		197308FD21774BE900B95FF0 /* GDNoteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDNoteUITests.m; sourceTree = "<group>"; };
 		197308FF21774BE900B95FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1973090D21774D4900B95FF0 /* GDNSString+Number+GD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDNSString+Number+GD.h"; sourceTree = "<group>"; };
+		1973090E21774D4900B95FF0 /* GDNSString+Number+GD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDNSString+Number+GD.m"; sourceTree = "<group>"; };
+		1973091021774E0100B95FF0 /* GDTestStringNumCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDTestStringNumCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		197308D821774BE800B95FF0 /* GDNote */ = {
 			isa = PBXGroup;
 			children = (
+				1973090B21774D4900B95FF0 /* Foundation */,
 				197308D921774BE800B95FF0 /* AppDelegate.h */,
 				197308DA21774BE800B95FF0 /* AppDelegate.m */,
 				197308DC21774BE800B95FF0 /* ViewController.h */,
@@ -117,6 +123,7 @@
 		197308F121774BE900B95FF0 /* GDNoteTests */ = {
 			isa = PBXGroup;
 			children = (
+				1973091021774E0100B95FF0 /* GDTestStringNumCalculator.m */,
 				197308F221774BE900B95FF0 /* GDNoteTests.m */,
 				197308F421774BE900B95FF0 /* Info.plist */,
 			);
@@ -130,6 +137,23 @@
 				197308FF21774BE900B95FF0 /* Info.plist */,
 			);
 			path = GDNoteUITests;
+			sourceTree = "<group>";
+		};
+		1973090B21774D4900B95FF0 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				1973090C21774D4900B95FF0 /* NSString */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		1973090C21774D4900B95FF0 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				1973090D21774D4900B95FF0 /* GDNSString+Number+GD.h */,
+				1973090E21774D4900B95FF0 /* GDNSString+Number+GD.m */,
+			);
+			path = NSString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +288,7 @@
 			files = (
 				197308DE21774BE800B95FF0 /* ViewController.m in Sources */,
 				197308E921774BE900B95FF0 /* main.m in Sources */,
+				1973090F21774D4900B95FF0 /* GDNSString+Number+GD.m in Sources */,
 				197308DB21774BE800B95FF0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1973091121774E0100B95FF0 /* GDTestStringNumCalculator.m in Sources */,
 				197308F321774BE900B95FF0 /* GDNoteTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +500,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V973TY4SQ9;
 				INFOPLIST_FILE = GDNoteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,6 +519,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V973TY4SQ9;
 				INFOPLIST_FILE = GDNoteTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
