@@ -30,10 +30,16 @@
 - (void)testAdd{
     NSString *number1 = [@"1" gd_addWithNumber:@"2.0145" scale:3];
     NSString *number2 = [@"1" gd_addWithNumber:@"2.0145" scale:1];
+    NSString *number3 = gd_addStr(@"1", @"2.0145", 3);
+    
     NSString *target1 = @"3.014";
     NSString *target2 = @"3";
+    
+    
+    
     XCTAssertTrue([number1 isEqualToString:target1]);
     XCTAssertTrue([number2 isEqualToString:target2]);
+    XCTAssertTrue([number3 isEqualToString:target1]);
 }
 
 
